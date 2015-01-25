@@ -1,4 +1,4 @@
-# JFavicon
+# JFavicon [![Build Status](https://travis-ci.org/zach-klippenstein/jfavicon.svg)](https://travis-ci.org/zach-klippenstein/jfavicon)
 
 JFavicon is a simple library for finding the URLs of [favicons](http://en.wikipedia.org/wiki/Favicon).
 
