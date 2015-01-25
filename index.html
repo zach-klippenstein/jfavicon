@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jfavicon by zach-klippenstein</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jfavicon</h1>
+        <p>JFavicon is a simple library for finding the URLs of favicons.</p>
+
+        <p class="view"><a href="https://github.com/zach-klippenstein/jfavicon">View the Project on GitHub <small>zach-klippenstein/jfavicon</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/zach-klippenstein/jfavicon/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/zach-klippenstein/jfavicon/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/zach-klippenstein/jfavicon">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="jfavicon" class="anchor" href="#jfavicon" aria-hidden="true"><span class="octicon octicon-link"></span></a>JFavicon</h1>
+
+<p><img src="https://travis-ci.org/zach-klippenstein/jfavicon.svg" alt="Build Status"></p>
+
+<p>JFavicon is a simple library for finding the URLs of <a href="http://en.wikipedia.org/wiki/Favicon">favicons</a>.</p>
+
+<p>The correct way for a page to define its favicon is with a link element in the head. However, not all pages do this,
+so if there are no link elements, the root is checked for files like <code>favicon.ico</code> (see
+<code>Source</code> for which extensions are checked).</p>
+
+<pre><code>new FaviconLoader().getFavicons("http://www.wikipedia.com", new FaviconCallback() {
+  @Override public void onFaviconsLoaded(Set&lt;URL&gt; favicons) {
+    for (URL fav : favicons) {
+      System.out.println(fav);
+    }
+  }
+});
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/zach-klippenstein">zach-klippenstein</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
